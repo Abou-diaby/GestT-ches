@@ -42,7 +42,7 @@ fun GestTaches(text1: String, text2: String, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.fillMaxSize().padding(16.dp)
+        modifier = Modifier.fillMaxSize()
     ) {
         Image(
             painter = painterResource(R.drawable.ic_task_completed),
