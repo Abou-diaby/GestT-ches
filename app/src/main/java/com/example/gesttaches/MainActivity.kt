@@ -3,7 +3,6 @@ package com.example.gesttaches
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,13 +23,11 @@ import com.example.gesttaches.ui.theme.GestTachesTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             GestTachesTheme {
-                    GestTaches(
-                        text1 = "",
-                        text2 = "",
-                    )
+                GestTaches(text1 = stringResource(R.string.text1),
+                    text2 = stringResource(R.string.text2)
+                )
             }
         }
     }
